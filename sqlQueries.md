@@ -139,9 +139,7 @@ LIMIT 10;
 - Identifies top customers based on their total spending.
 - Useful for loyalty programs and targeted marketing.
 
-**Optimization Tips:**
-- Ensure `total_amount` is indexed and properly stored as a numeric type.
-- Use additional filters such as date ranges if needed.
+
 
 ---
 
@@ -156,12 +154,9 @@ WHERE invoices.order_id IS NULL;
 - Identifies orders that have not yet been invoiced.
 - Useful for accounting and order tracking.
 
-**Optimization Tips:**
-- Index `order_id` in both tables to improve query performance.
-- Consider filtering by order date to limit large datasets.
+
 
 ---
 
-## Conclusion
-This document provides a reference for essential SQL queries for general database operations. For optimal performance, ensure indexes are properly defined, queries are parameterized, and regular maintenance tasks are scheduled.
+
 
